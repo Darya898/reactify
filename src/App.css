@@ -35,6 +35,12 @@
   padding: 4px;
   height: 100%;
 }
+.truncate {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 ::-webkit-scrollbar {
   width: 3px;
   height: 2px !important;

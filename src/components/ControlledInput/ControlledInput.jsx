@@ -7,11 +7,11 @@ export  default function ControlledInput() {
 
     return (
         <div className="ControlledInput">
-            <p>Вы ввели: {value}</p>
+            <div className="truncate">Вы ввели:  {value}</div>
             <CustomInput type="text"
                    value={value}
-            onChange={event=>setValue(event.target.value)}
-            ></CustomInput>
+                   onChange={event=>setValue(event.target.value)}
+            />
         </div>
     );
 }
