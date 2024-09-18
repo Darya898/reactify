@@ -1,0 +1,10 @@
+.customBnt{
+    padding: 5px 15px;
+    background:#ccc;
+    font-size: 14px;
+    color:#323232;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    font-weight: 600;
+}
