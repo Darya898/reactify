@@ -8,11 +8,13 @@ const Posts = () => {
     const [posts,setPosts]=useState([]);
     const url = 'https://jsonplaceholder.typicode.com/posts';
     async function DataFetcher() {
-        const response=await axios.get(url);
-        setPosts(response.data);
-        // return (
-        //
-        // );
+        try{
+            const response=await axios.get(url);
+            setPosts(response.data);
+        }
+        catch(e){
+            console.log(e)
+        }
     }
     return (
         <div className="Posts">
